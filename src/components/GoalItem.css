@@ -1,0 +1,95 @@
+.goal-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  transition: background-color 0.2s;
+}
+
+.goal-item:hover {
+  background-color: #f9f9f9;
+  padding: 15px 10px;
+  border-radius: 5px;
+}
+
+.goal-item.done {
+  opacity: 0.7;
+}
+
+.goal-text {
+  flex: 1;
+  font-size: 18px;
+  color: #333;
+  word-break: break-word;
+}
+
+.goal-text .completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.goal-buttons {
+  display: flex;
+  gap: 10px;
+  margin-left: 15px;
+}
+
+.mark-done-button,
+.delete-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  white-space: nowrap;
+}
+
+.mark-done-button {
+  background: linear-gradient(135deg, #56ab91 0%, #4a8f6f 100%);
+  color: white;
+}
+
+.mark-done-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(86, 171, 145, 0.3);
+}
+
+.delete-button {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+}
+
+.delete-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(245, 87, 108, 0.3);
+}
+
+.mark-done-button:active,
+.delete-button:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 600px) {
+  .goal-item {
+    flex-wrap: wrap;
+    padding: 12px 0;
+  }
+
+  .goal-text {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .goal-buttons {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .mark-done-button,
+  .delete-button {
+    flex: 1;
+  }
+}

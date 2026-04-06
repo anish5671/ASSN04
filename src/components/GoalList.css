@@ -1,0 +1,25 @@
+.goal-list {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  min-height: 200px;
+}
+
+.no-goals {
+  text-align: center;
+  color: #999;
+  font-size: 18px;
+  padding: 40px 20px;
+  font-style: italic;
+}
+
+.goals-ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.goals-ul li:not(:last-child) {
+  border-bottom: 1px solid #f0f0f0;
+}
